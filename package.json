@@ -1,0 +1,33 @@
+{
+  "name": "sibi-task-proxy",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "@architect/functions": "^3.13.8",
+    "aws-sdk": "^2.804.0",
+    "aws-serverless-express": "^3.3.9",
+    "binary-case": "^1.1.4",
+    "cookie": "^0.4.1",
+    "cookie-signature": "^1.1.0",
+    "csrf": "^3.1.0",
+    "media-typer": "^0.3.0",
+    "mime-db": "^1.44.0",
+    "mime-types": "^2.1.27",
+    "node-webtokens": "^1.0.4",
+    "random-bytes": "^1.0.0",
+    "rndm": "^1.2.0",
+    "run-parallel": "^1.1.10",
+    "run-waterfall": "^1.1.7",
+    "tsscmp": "^1.0.6",
+    "type-is": "^1.6.18",
+    "uid-safe": "^2.1.5"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
