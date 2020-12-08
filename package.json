@@ -21,11 +21,18 @@
     "run-waterfall": "^1.1.7",
     "tsscmp": "^1.0.6",
     "type-is": "^1.6.18",
+    "typescript": "^4.1.2",
     "uid-safe": "^2.1.5"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "@types/node": "^14.14.11"
+  },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "npx tsc",
+    "start": "npm run build && npx arc sandbox",
+    "deploy:arc": "npm run build && npx arc deploy",
+    "deploy:arc-production": "npm run build && npx arc deploy --production",
+    "arc:destroy": "arc destroy --name sibi-task-proxy --force"
   },
   "keywords": [],
   "author": "",

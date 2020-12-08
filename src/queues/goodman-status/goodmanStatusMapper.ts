@@ -1,7 +1,5 @@
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
-const goodmanStatusHandler = (orderStatus) => {
-    const items = orderStatus.order.details.map((d) => ({
+const goodmanStatusHandler = (orderStatus: { order: { details: any[]; orderNumber: any; branchNumber: any; jobName: any; orderStatusCode: any; pickStatusCode: any; pickStatusLabel: any; }; }) => {
+    const items = orderStatus.order.details.map((d: { sku: any; serialNumbers: any[]; orderNumber: any; description: any; quantityOrdered: any; quantityShipped: any; unitPrice: any; linePrice: any; discountPercent: any; quantityAvailable: any; }) => ({
         sku: d.sku,
         serialNumbers: d.serialNumbers[0],
         orderNumber: d.orderNumber,
@@ -24,4 +22,5 @@ const goodmanStatusHandler = (orderStatus) => {
     };
     return SibiStatus;
 };
-exports.default = goodmanStatusHandler;
+
+export default goodmanStatusHandler

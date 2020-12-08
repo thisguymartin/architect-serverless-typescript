@@ -1,9 +1,14 @@
-let arc = require('@architect/functions')
-
-// learn more about queue functions here: https://arc.codes/primitives/queues
-exports.handler = async function queue (event) {
-  let name = 'goodman-status'
-  let payload = JSON.parse(event.Records[0].body)
-  await arc.queues.publish({name, payload})  
-  return 
+"use strict";
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.handler = void 0;
+const functions_1 = __importDefault(require("@architect/functions"));
+async function handler(req) {
+    let name = 'goodman-status';
+    let payload = JSON.parse(req.Records[0].body);
+    await functions_1.default.queues.publish({ name, payload });
+    return;
 }
+exports.handler = handler;
