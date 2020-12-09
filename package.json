@@ -4,6 +4,7 @@
   "description": "Serverless Architect Project using Typescript",
   "main": "index.js",
   "dependencies": {
+    "@architect/architect": "^8.3.6",
     "@architect/functions": "^3.13.8",
     "aws-sdk": "^2.804.0",
     "aws-serverless-express": "^3.3.9",
