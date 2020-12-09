@@ -7,9 +7,7 @@ This is a serverless [Architect](https://arc.codes/) framework built in typescri
 
 ## Usage 🔬
 
-_Currently being consumed by these project(s) of mine, will try and keep this list updated_
-
-- [Serverless Weather 🌦](https://github.com/rahman95/serverless-weather)
+Focus on the core business logic required to create value and deploy code with confidence. 
 
 ## Tech 🧰
 
