@@ -39,6 +39,13 @@ jobs:
     - name: Deploy Stage
       run: yarn deploy:arc
       env:
-        # aws_access_key_id: ${{ secrets.AWS_ACCESS_KEY_ID }}
-        # aws_secret_access_key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
         aws_region: us-west-1
+    - name: commit-staging-yaml
+      uses: github-actions-x/commit@v2.7
+      with:
+        github-token: ${{ secrets.GITHUB_TOKEN }}
+        push-branch: 'master'
+        commit-message: 'publish staging'
+        force-add: 'true'
+        name: thisguymartin
+        email: martin@gizmodlabs.com
