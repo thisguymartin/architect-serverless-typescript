@@ -8,6 +8,5 @@ post /queue-post
 queue-task-proxy 
 status-mapper
 
-
 @aws
 region us-west-1
