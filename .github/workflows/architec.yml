@@ -1,0 +1,44 @@
+name: AWS Architect Deploy
+
+# Run this workflow every time a new commit pushed to your repository
+
+on:
+  push:
+    branches:
+    - master
+
+jobs:
+  # Set the job key. The key is displayed as the job name
+  # when a job name is not provided
+  build:
+    # Name the Job
+    name: Architect-Deploy
+    # Set the type of machine to run on
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        node-version: [14.x]
+
+    steps:
+      # Checks out a copy of your repository on the ubuntu-latest machine
+    - uses: actions/checkout@v2
+    - name: Configure AWS credentials from Test account
+      uses: aws-actions/configure-aws-credentials@v1
+      with:
+        aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
+        aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+        aws-region: us-west-1
+    - name: Use Node.js ${{ matrix.node-version }}
+      uses: actions/setup-node@v1.4.4
+      with:
+        node-version: ${{ matrix.node-version }}
+    - name: Install dependencies
+      run: yarn install
+    - name: Build
+      run: yarn build
+    - name: Deploy Stage
+      run: yarn deploy:arc
+      env:
+        # aws_access_key_id: ${{ secrets.AWS_ACCESS_KEY_ID }}
+        # aws_secret_access_key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+        aws_region: us-west-1
