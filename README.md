@@ -1,15 +1,13 @@
 # architect-serverless-typescript 🏗λ
 
 
-This is a serverless [Architect](https://arc.codes/) framework built in typescript 
+This project uses serverless [Architect](https://arc.codes/) for deploying and managing serverless lambda functions and queues. 
 
 > Architect provides everything you need to build fast, modern, massively scalable cloud apps with low code, clear and terse config, zero ceremony, and no lock-in.
 
 ## Usage 🔬
 
-_Currently being consumed by these project(s) of mine, will try and keep this list updated_
-
-- [Serverless Weather 🌦](https://github.com/rahman95/serverless-weather)
+Focus on the core business logic required to create value and deploy code with confidence. 
 
 ## Tech 🧰
 
