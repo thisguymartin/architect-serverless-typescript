@@ -1,7 +1,7 @@
 {
   "name": "architect-serverless-typescript",
   "version": "1.0.0",
-  "description": "Typescript Architect Project using Typescript",
+  "description": "Serverless Architect Project using Typescript",
   "main": "index.js",
   "dependencies": {
     "@architect/functions": "^3.13.8",
