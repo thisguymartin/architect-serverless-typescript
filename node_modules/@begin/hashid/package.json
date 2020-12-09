@@ -1,0 +1,31 @@
+{
+  "name": "@begin/hashid",
+  "description": "Generate ids from numbers",
+  "version": "1.0.0",
+  "scripts": {
+    "precommit": "npm run lint && npm run test",
+    "lint": "eslint index.js tests --fix",
+    "test": "mocha tests",
+    "coverage": "nyc npm test && nyc report --reporter=text-summary",
+    "clean": "rm -rf coverage .nyc_output npm-debug.log",
+    "all": "npm run lint && npm run coverage && npm run clean"
+  },
+  "devDependencies": {
+    "chai": "^4.1.2",
+    "eslint": "^5.4.0",
+    "husky": "^0.14.3",
+    "mocha": "^5.2.0",
+    "nyc": "^13.0.1"
+  },
+  "license": "MIT",
+  "keywords": [
+    "hashids",
+    "hashid",
+    "hash",
+    "ids",
+    "encode",
+    "decode",
+    "encrypt",
+    "decrypt"
+  ]
+}
