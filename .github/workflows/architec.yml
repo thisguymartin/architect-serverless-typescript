@@ -39,6 +39,5 @@ jobs:
         github-token: ${{ secrets.GITHUB_TOKEN }}
         push-branch: 'master'
         commit-message: 'publish staging'
-        force-add: 'true'
         name: thisguymartin
         email: martin@gizmodlabs.com
