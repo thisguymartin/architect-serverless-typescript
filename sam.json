@@ -1,7 +1,7 @@
 {
   "AWSTemplateFormatVersion": "2010-09-09",
   "Transform": "AWS::Serverless-2016-10-31",
-  "Description": "Exported by architect/package@6.0.1 on 2020-12-09T16:18:55.652Z",
+  "Description": "Exported by architect/package@6.0.1 on 2020-12-09T16:21:31.433Z",
   "Resources": {
     "HTTP": {
       "Type": "AWS::Serverless::HttpApi",
@@ -70,7 +70,7 @@
       "Type": "AWS::Serverless::Function",
       "Properties": {
         "Handler": "index.handler",
-        "CodeUri": "/Users/martin/sibi-workspace/architect-serverless-typescript/node_modules/@architect/asap/dist",
+        "CodeUri": "/home/runner/work/architect-serverless-typescript/architect-serverless-typescript/node_modules/@architect/asap/dist",
         "Runtime": "nodejs12.x",
         "MemorySize": 1152,
         "Timeout": 5,
@@ -120,7 +120,7 @@
       "Type": "AWS::Serverless::Function",
       "Properties": {
         "Handler": "index.handler",
-        "CodeUri": "/Users/martin/sibi-workspace/architect-serverless-typescript/src/http/post-queue_post",
+        "CodeUri": "/home/runner/work/architect-serverless-typescript/architect-serverless-typescript/src/http/post-queue_post",
         "Runtime": "nodejs12.x",
         "MemorySize": 1152,
         "Timeout": 5,
@@ -170,7 +170,7 @@
       "Type": "AWS::Serverless::Function",
       "Properties": {
         "Handler": "index.handler",
-        "CodeUri": "/Users/martin/sibi-workspace/architect-serverless-typescript/src/queues/queue-task-proxy",
+        "CodeUri": "/home/runner/work/architect-serverless-typescript/architect-serverless-typescript/src/queues/queue-task-proxy",
         "Runtime": "nodejs12.x",
         "MemorySize": 1152,
         "Timeout": 5,
@@ -229,7 +229,7 @@
       "Type": "AWS::Serverless::Function",
       "Properties": {
         "Handler": "index.handler",
-        "CodeUri": "/Users/martin/sibi-workspace/architect-serverless-typescript/src/queues/status-mapper",
+        "CodeUri": "/home/runner/work/architect-serverless-typescript/architect-serverless-typescript/src/queues/status-mapper",
         "Runtime": "nodejs12.x",
         "MemorySize": 1152,
         "Timeout": 5,
