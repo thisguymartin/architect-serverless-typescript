@@ -1,9 +1,9 @@
 @app
-sibi-task-proxy
+architect-serverless-typescript
 
 @http
 post /queue-post
 
 @queues
 queue-task-proxy 
-goodman-status
+status-mapper
