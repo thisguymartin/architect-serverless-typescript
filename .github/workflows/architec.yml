@@ -1,26 +1,19 @@
 name: AWS Architect Deploy
 
-# Run this workflow every time a new commit pushed to your repository
-
 on:
   push:
     branches:
     - master
 
 jobs:
-  # Set the job key. The key is displayed as the job name
-  # when a job name is not provided
   build:
-    # Name the Job
     name: Architect-Deploy
-    # Set the type of machine to run on
     runs-on: ubuntu-latest
     strategy:
       matrix:
         node-version: [14.x]
 
     steps:
-      # Checks out a copy of your repository on the ubuntu-latest machine
     - uses: actions/checkout@v2
     - name: Configure AWS credentials from Test account
       uses: aws-actions/configure-aws-credentials@v1
