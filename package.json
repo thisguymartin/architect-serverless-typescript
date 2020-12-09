@@ -37,7 +37,7 @@
     "start": "npm run build && npx arc sandbox",
     "deploy:arc": "npm run build && npx arc deploy",
     "deploy:arc-production": "npm run build && npx arc deploy --production",
-    "arc:destroy": "arc destroy --name sibi-task-proxy --force"
+    "arc:destroy": "arc destroy --name architect-serverless-typescript --force"
   },
   "keywords": [
     "typescript",
