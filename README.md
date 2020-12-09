@@ -1,6 +1,5 @@
 # architect-serverless-typescript 🏗λ
 
-
 This project uses serverless [Architect](https://arc.codes/) for deploying and managing serverless lambda functions and queues. 
 
 > Architect provides everything you need to build fast, modern, massively scalable cloud apps with low code, clear and terse config, zero ceremony, and no lock-in.
